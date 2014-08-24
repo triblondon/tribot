@@ -1,0 +1,18 @@
+{
+  "name": "tribot"
+  "description": "XMPP chat bot, similar to but simpler than hubot, and locked to XMPP",
+  "main": "./lib/bot.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:triblondon/tribot.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.6.5",
+    "express": "^4.8.5",
+    "ltx": "^0.5.2",
+    "node-xmpp-client": "^1.0.0-alpha7",
+    "node-xmpp-core": "^1.0.0-alpha6",
+    "request": "^2.40.0",
+    "underscore": "^1.6.0"
+  }
+}
