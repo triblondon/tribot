@@ -1,5 +1,5 @@
 {
-  "name": "tribot"
+  "name": "tribot",
   "description": "XMPP chat bot, similar to but simpler than hubot, and locked to XMPP",
   "main": "./lib/bot.js",
   "repository": {
