@@ -10,10 +10,9 @@ Not on npm, so:
 git clone https://github.com/triblondon/tribot.git
 cd tribot
 npm install
-cp examples/index.js index.js
 ```
 
-Now open up index.js and add the username, password and server of the XMPP user account that you want the bot to control.  You can also set `debug` to true if you want verbose output.
+Now open up config.json and add the username, password and server of the XMPP user account that you want the bot to control.  You can also set `debug` to true if you want verbose output, and configure any plugins that you want.  See the [plugins](lib/plugins) directory for plugin specific documentation.
 
 Now, start the bot:
 

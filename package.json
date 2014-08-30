@@ -9,10 +9,15 @@
   "dependencies": {
     "body-parser": "^1.6.5",
     "express": "^4.8.5",
+    "forever": "^0.11.1",
     "ltx": "^0.5.2",
     "node-xmpp-client": "^1.0.0-alpha7",
     "node-xmpp-core": "^1.0.0-alpha6",
     "request": "^2.40.0",
     "underscore": "^1.6.0"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/forever --minUptime 1000 --spinSleepTime 1000 --no-colors start index.js",
+    "stop": "./node_modules/.bin/forever --no-colors stop index.js"
   }
 }
