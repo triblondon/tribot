@@ -1,0 +1,16 @@
+{
+	"jid": "xxxxxxxxx@xxxxxxxxxxxxxxxxxxxxx",
+	"password": "xxxxxxxxxxxxxxxxx",
+	"mucHost": "xxxxxxxxx.xxxxxxxxx.xxxxxxxxx.xxxxxx",
+	"rooms": [],
+	"debug": false,
+	"plugins": {
+		"httpapi": {
+			"port": 80
+		},
+		"echo": {},
+		"groupcommands": {},
+		"maps": {},
+		"help": {}
+	}
+}
