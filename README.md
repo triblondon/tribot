@@ -12,6 +12,8 @@ cd tribot
 npm install
 ```
 
+Note: the dependency tree includes [node-gyp](https://github.com/TooTallNate/node-gyp) which can [be problematic](https://github.com/TooTallNate/node-gyp/issues/341) to install on MacOS.  I found that using the latest 0.10.* version of Node and the latest version of npm solved the problem.
+
 Now open up config.json and add the username, password and server of the XMPP user account that you want the bot to control.  You can also set `debug` to true if you want verbose output, and configure any plugins that you want.  See the [plugins](lib/plugins) directory for plugin specific documentation.
 
 Now, start the bot:
