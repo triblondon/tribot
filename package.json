@@ -11,6 +11,7 @@
     "express": "^4.8.5",
     "forever": "^0.11.1",
     "ltx": "^0.5.2",
+    "node-schedule": "^0.1.15",
     "node-xmpp-client": "^1.0.0-alpha7",
     "node-xmpp-core": "^1.0.0-alpha6",
     "request": "^2.40.0",
