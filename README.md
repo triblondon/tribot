@@ -1,6 +1,6 @@
 # Tribot, a pluggable XMPP chat bot
 
-This is an XMPP chat bot styled on hubot, which came out of a weekend hacking at creating a bot for Slack.  I wasn't happy with hubot for sending braodcast notifications to multiple rooms, especially those that the bot isn't a member of, and I also don't like coffeescript very much.
+This is an XMPP chat bot styled on hubot, which came out of a weekend hacking at creating a bot for Slack.  I wasn't happy with hubot for sending broadcast notifications to multiple rooms, especially those that the bot isn't a member of, and I also don't like coffeescript very much.
 
 ## Installation
 
