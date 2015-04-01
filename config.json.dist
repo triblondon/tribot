@@ -3,7 +3,15 @@
 	"password": "xxxxxxxxxxxxxxxxx",
 	"mucHost": "xxxxxxxxx.xxxxxxxxx.xxxxxxxxx.xxxxxx",
 	"rooms": [],
-	"debug": false,
+	"logs": {
+		"logentries": {
+			"token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+			"level": "info"
+		},
+		"stdout": {
+			"level": "trace"
+		}
+	},
 	"plugins": {
 		"httpapi": {
 			"port": 80
