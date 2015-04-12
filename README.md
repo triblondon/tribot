@@ -12,7 +12,7 @@ cd tribot
 npm install
 ```
 
-Note: the dependency tree includes [node-gyp](https://github.com/TooTallNate/node-gyp) which can [be problematic](https://github.com/TooTallNate/node-gyp/issues/341) to install on MacOS.  I found that using the latest 0.10.* version of Node and the latest version of npm solved the problem.
+Note: the dependency tree includes [node-gyp](https://github.com/TooTallNate/node-gyp) which can [be problematic](https://github.com/TooTallNate/node-gyp/issues/341) to install on MacOS.  I found that using the latest 0.10.* version of Node and the latest version of npm solved the problem.  There are still some [issues with node-xmpp](#node-xmpp-issues), however.
 
 Create a config file:
 
@@ -98,3 +98,11 @@ To enable your new plugin, add a line to the bottom of `index.js`, calling `load
 ```
 b.loadPlugin('my-splendid-cat-gififyer');
 ```
+
+## node-xmpp issues
+
+node-xmpp is developing quite quickly towards a 1.0 at the moment, and has some current issues:
+
+* There are a lot of warnings output by `node-expat` during installation, but this is a [known issue](https://github.com/node-xmpp/node-expat/issues/58) and doesn't appear to stop it working.
+* On startup the bot outputs "Cannot load StringPrep-0.7.0 bindings (using fallback). You may need to `npm install node-stringprep`" to the console.  There are various [issues describing this](https://github.com/node-xmpp/node-xmpp/issues/258), and my guess is that I have an incompatible version of libicu on my system.  It happens both in my local MacOS environment and on my CentOS prod environment which has `libicu-4.2.1-9.1.el6_2.x86_64`.  It says it's using a fallback though, so, fine.
+* On connect the bot outputs "createCredentials() is deprecated, use tls.createSecureContext instead" to the console.  This is [fixed in node-xmpp-client](https://github.com/node-xmpp/node-xmpp-client/commit/aa90064beae9ec00a9153c025978395be20b8993) but hasn't been released yet.

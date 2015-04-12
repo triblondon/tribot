@@ -15,8 +15,8 @@
     "ltx": "^0.5.2",
     "node-schedule": "^0.1.15",
     "node-stringprep": "^0.7.0",
-    "node-xmpp-client": "^1.0.0-alpha7",
-    "node-xmpp-core": "^1.0.0-alpha6",
+    "node-xmpp-client": "^1.0.0-alpha20",
+    "node-xmpp-core": "^1.0.0-alpha14",
     "request": "^2.40.0",
     "time": "^0.11.2",
     "underscore": "^1.6.0"
