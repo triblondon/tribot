@@ -20,5 +20,6 @@
 		"groupcommands": {},
 		"maps": {},
 		"help": {}
-	}
+	},
+	"timeZone": "Europe/London"
 }
