@@ -7,6 +7,7 @@
     "url": "git@github.com:triblondon/tribot.git"
   },
   "dependencies": {
+    "babel": "^5.2.9",
     "body-parser": "^1.6.5",
     "bunyan": "^1.3.4",
     "bunyan-logentries": "^0.1.0",
@@ -22,8 +23,8 @@
     "underscore": "^1.6.0"
   },
   "scripts": {
-    "dev": "node --harmony index.js",
-    "start": "./node_modules/.bin/forever -c \"node --harmony\" --minUptime 5000 --spinSleepTime 1000 --no-colors start index.js",
-    "stop": "./node_modules/.bin/forever -c \"node --harmony\" --no-colors stop index.js"
+    "dev": "node index.js | ./node_modules/.bin/bunyan -o short",
+    "start": "./node_modules/.bin/forever --minUptime 5000 --spinSleepTime 1000 --no-colors start index.js",
+    "stop": "./node_modules/.bin/forever --no-colors stop index.js"
   }
 }

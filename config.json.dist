@@ -19,19 +19,8 @@
 		"echo": {},
 		"groupcommands": {},
 		"maps": {},
-		"help": {}
-		"ft": {
-			"questions": {
-				"Question text": {
-					"answer": "Answer text",
-					"link": "Related URL",
-					"image": "Image URL",
-					"rellinks": [
-						"http://www.ft.com/intl/cms/s/0/cb881348-de9a-11e4-b9ec-00144feab7de.html"
-					]
-				}
-			}
-		},
+		"help": {},
+		"botdebug": {}
 	},
 	"timeZone": "Europe/London"
 }
