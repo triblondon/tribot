@@ -1,7 +1,9 @@
 require("babel/register");
 
+var config;
+
 try {
-	const config = require('./config.json');
+	config = require('./config.json');
 } catch (e) {
 	console.error('Missing config file.  Before you start tribot, you need to configure it by creating a config.json file.  See the README for more details.');
 	process.exit(1);
@@ -13,6 +15,6 @@ var time = require('time')(Date);
 if ("timeZone" in config) time.tzset(config.timeZone);
 
 var Bot = require('./lib/bot');
-var b = new Bot(config);
+var b = new Bot(config.jid, config.password, config);
 
 b.connect();
